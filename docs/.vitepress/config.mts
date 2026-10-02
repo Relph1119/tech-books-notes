@@ -61,7 +61,8 @@ export default defineConfig({
               { text: '第1篇 软件工程师的成长', link: '/build_the_way/sec01' },
               { text: '第2篇 团队成长与敏捷流程', link: '/build_the_way/sec02' },
               { text: '第3篇 软件工程实践', link: '/build_the_way/sec03' },
-              { text: '第4篇 IT行业创新与职业道德', link: '/build_the_way/sec04' }
+              { text: '第4篇 IT行业创新与职业道德', link: '/build_the_way/sec04' },
+              { text: '附录 事后诸葛亮会议', link: '/build_the_way/appendix' }
             ]
           }
         ]

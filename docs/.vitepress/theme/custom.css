@@ -395,3 +395,111 @@ td {
   width: 10%;
   /* 强制均匀分配宽度 */
 }
+
+/* ============================================================================
+   功能分析四象限（带十字坐标轴）
+   ============================================================================ */
+
+.quadrant-figure {
+  position: relative;
+  max-width: 720px;
+  margin: 2rem auto 2.5rem;
+  padding: 2.25rem 2.5rem;
+}
+
+.quadrant-figure .quadrant {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+
+.vp-doc .quadrant-figure .quadrant-item {
+  border: 1px solid var(--vp-c-border);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  background-color: var(--vp-c-bg-alt);
+}
+
+.vp-doc .quadrant-figure .quadrant-item h4 {
+  margin: 0 0 0.5rem;
+  color: var(--vp-c-brand-1);
+  font-size: 0.95rem;
+}
+
+.vp-doc .quadrant-figure .quadrant-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--vp-c-text-2);
+}
+
+/* 十字坐标轴 */
+.quadrant-figure .axis {
+  position: absolute;
+  background: var(--vp-c-divider);
+}
+
+.quadrant-figure .axis-x {
+  left: 2.5rem;
+  right: 2.5rem;
+  top: 50%;
+  height: 2px;
+}
+
+.quadrant-figure .axis-y {
+  top: 2.25rem;
+  bottom: 2.25rem;
+  left: 50%;
+  width: 2px;
+}
+
+/* 轴标签（用页面底色遮住轴线，避免压字） */
+.quadrant-figure .axis-label {
+  position: absolute;
+  font-size: 0.8rem;
+  color: var(--vp-c-text-2);
+  background: var(--vp-c-bg);
+  padding: 0 0.35rem;
+  white-space: nowrap;
+  line-height: 1.4;
+}
+
+.quadrant-figure .axis-label.y-top {
+  top: 0.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.quadrant-figure .axis-label.y-bottom {
+  bottom: 0.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.quadrant-figure .axis-label.x-left {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.quadrant-figure .axis-label.x-right {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* 窄屏：隐藏坐标轴，四列改为单列堆叠 */
+@media (max-width: 640px) {
+  .quadrant-figure {
+    padding: 1.25rem 1rem;
+  }
+
+  .quadrant-figure .quadrant {
+    grid-template-columns: 1fr;
+  }
+
+  .quadrant-figure .axis,
+  .quadrant-figure .axis-label {
+    display: none;
+  }
+}
