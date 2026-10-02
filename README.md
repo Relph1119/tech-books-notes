@@ -15,6 +15,7 @@ https://relph1119.github.io/tech-books-notes
 | [《编码：隐匿在计算机软硬件背后的语言》读书笔记](https://github.com/Relph1119/tech-books-notes/blob/main/docs/code/note.md)  | 从继电器到计算机的软硬件原理科普 | ✅ |
 | [《科学家列传》（壹）读书笔记](https://github.com/Relph1119/tech-books-notes/blob/main/docs/biography_of_scientists/note.md)  | 科学家生平与贡献梳理 | ✅ |
 | [极客时间《操作系统实战45讲》学习笔记](https://github.com/Relph1119/tech-books-notes/blob/main/docs/os_practise)  | 从零动手写一个操作系统 | ✅ |
+| [《构建之法-现代软件工程》（第四版）读书笔记](https://github.com/Relph1119/tech-books-notes/blob/main/docs/build_the_way)  | 从零开始构建一个软件工程团队 | ✅ |
 
 ## 本地开发
 

@@ -54,6 +54,15 @@ export default defineConfig({
               { text: '第4章 基本法：同步原语', link: '/os_practise/ch04' },
               { text: '第5章 夺权：启动初始化', link: '/os_practise/ch05' }
             ]
+          },
+          {
+            text: '《构建之法-现代软件工程》（第四版）读书笔记',
+            items: [
+              { text: '第1篇 软件工程师的成长', link: '/build_the_way/sec01' },
+              { text: '第2篇 团队成长与敏捷流程', link: '/build_the_way/sec02' },
+              { text: '第3篇 软件工程实践', link: '/build_the_way/sec03' },
+              { text: '第4篇 IT行业创新与职业道德', link: '/build_the_way/sec04' }
+            ]
           }
         ]
       }
