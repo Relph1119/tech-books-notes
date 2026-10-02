@@ -1,38 +1,30 @@
 # 技术书籍阅读笔记
-记录本人的技术书籍阅读笔记，包括笔记、总结和思维导图。
 
-## 在线阅读地址
-在线阅读地址：https://relph1119.github.io/TechBooks-ReadingNote
+> [!NOTE]
+> 记录本人的技术书籍阅读笔记，包括笔记、总结和思维导图，持续更新中，欢迎大家提Issue反馈问题或建议。
+
+## 在线阅读
+
+https://relph1119.github.io/tech-books-notes
 
 ## 目录
-- QCon2019（广州站）参会总结
-- 《编码:隐匿在计算机软硬件背后的语言》读书笔记
-- 《科学家列传》（壹）读书笔记
-- 极客时间《Python自动化办公》学习笔记
 
-## 运行环境
-### Python版本
-Mini-Conda Python 3.8 Windows环境
+|  章节名   | 简介 | 状态 |
+|  ----  | ---- | ---- |
+| [QCon2019（广州站）参会总结](https://github.com/Relph1119/tech-books-notes/blob/main/docs/qcon2019_guangzhou/note.md)  | QCon 广州站两天的议程记录与讲座笔记 | ✅ |
+| [《编码：隐匿在计算机软硬件背后的语言》读书笔记](https://github.com/Relph1119/tech-books-notes/blob/main/docs/code/note.md)  | 从继电器到计算机的软硬件原理科普 | ✅ |
+| [《科学家列传》（壹）读书笔记](https://github.com/Relph1119/tech-books-notes/blob/main/docs/biography_of_scientists/note.md)  | 科学家生平与贡献梳理 | ✅ |
+| [极客时间《操作系统实战45讲》学习笔记](https://github.com/Relph1119/tech-books-notes/blob/main/docs/os_practise)  | 从零动手写一个操作系统 | ✅ |
 
-### Notebook运行环境配置
-安装相关的依赖包
+## 本地开发
+
+本站基于 VitePress 构建，本地启动方式：
+
 ```shell
-conda install --yes --file requirements_conda.txt
-pip install -r requirements_pipy.txt.txt
+npm install
+npm run docs:dev
 ```
 
-### 安装Tesseract（用于离线文字识别）  
-可参考博客：https://blog.csdn.net/guliang21/article/details/86735822
+## LICENSE
 
-### 安装ImageMagick（用于长图拼接）
-可参考博客（Windows）：https://blog.csdn.net/qq_37674858/article/details/80361860
-
-### Conda批量导出环境中所有组件
-```shell
-conda list -e > requirements_conda.txt
-```
-
-### 本地启动docsify
-```shell
-docsify serve ./docs
-```
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-lightgrey" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
